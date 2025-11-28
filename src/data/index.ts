@@ -1,4 +1,7 @@
 import type { Project, TechItem } from '../types';
+import MinimalPreview from '../assets/images/MinimalPreview.jpeg';
+import WhereInTheWorldPreview from '../assets/images/WhereInTheWorldPreview.jpeg';
+import PokedexPreview from '../assets/images/PokedexPreview.jpeg';
 
 export const techStackData: TechItem[] = [
   { name: "React", logo: "https://img.icons8.com/plasticine/100/react.png" },
@@ -18,27 +21,27 @@ export const projectsListData: Project[] = [
     title: "Minimal Shop",
     description: "Experience seamless online shopping with this elegant and fully responsive e-commerce storefront. Browse products, view details, and enjoy a minimalist design.",
     tags: ["Vue.js 3", "Javascript", "SASS"],
-    image: "src/assets/images/MinimalPreview.jpeg",
+    image: MinimalPreview,
     liveLink: "https://veluaru.github.io/Shop-vue-3/#/",
     sourceLink: "https://github.com/veluaru/Shop-vue-3"
   },
   {
     id: 2,
-    title: "Where in the world?",
-    description: "Explore the globe from your browser! This application allows you to search for any country, view its details, and switch between dark and light modes for a comfortable viewing experience.",
-    tags: ["React", "Next.js", "Typescript", "Tailwind CSS"],
-    image: "src/assets/images/WhereInTheWorldPreview.jpeg",
-    liveLink: "https://veluaru.github.io/countries-nextjs/",
-    sourceLink: "https://github.com/veluaru/countries-nextjs"
-  },
-  {
-    id: 3,
     title: "Pokedex",
     description: "Gotta catch 'em all! This Pokedex application lets you browse and discover your favorite Pokemon, demonstrating API integration and dynamic data display.",
     tags: ["Vue.js 3", "Javascript", "SASS"],
-    image: "src/assets/images/PokedexPreview.jpeg",
+    image: PokedexPreview,
     liveLink: "https://veluaru.github.io/favorite-pokemon-vue-3/",
     sourceLink: "https://github.com/veluaru/favorite-pokemon-vue-3"
+  },
+  {
+    id: 3,
+    title: "Where in the world?",
+    description: "Explore the globe from your browser! This application allows you to search for any country, view its details, and switch between dark and light modes for a comfortable viewing experience.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind CSS"],
+    image: WhereInTheWorldPreview,
+    liveLink: "https://veluaru.github.io/countries-nextjs/",
+    sourceLink: "https://github.com/veluaru/countries-nextjs"
   },
   {
     id: 4,

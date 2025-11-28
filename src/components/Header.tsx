@@ -4,6 +4,10 @@ import { usePortfolioStore } from '../store/usePortfolioStore';
 const Header = () => {
   const { isDarkMode, toggleTheme } = usePortfolioStore();
 
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-surface-dark bg-background-light/80 dark:bg-background-dark/80 px-4 sm:px-10 py-3">
       <div className="flex items-center gap-4">
@@ -15,11 +19,11 @@ const Header = () => {
 
       <div className="flex flex-1 justify-end items-center gap-4 sm:gap-8">
         <nav className="hidden sm:flex items-center gap-9">
-          <a href="#home" className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
-          <a href="#about" className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About</a>
-          <a href="#tech-stack" className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Tech stack</a>
-          <a href="#projects" className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Projects</a>
-          <a href="#contact" className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
+          <button onClick={() => scrollToSection('hero')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</button>
+          <button onClick={() => scrollToSection('about')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About</button>
+          <button onClick={() => scrollToSection('tech-stack')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Tech stack</button>
+          <button onClick={() => scrollToSection('projects')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Projects</button>
+          <button onClick={() => scrollToSection('contact')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</button>
         </nav>
 
         <div className="flex gap-2">

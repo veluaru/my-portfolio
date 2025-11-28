@@ -10,7 +10,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       <img 
         alt={project.title}
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-        src='src\assets\images\MinimalPreview.jpeg'
+        src={project.image}
       />
       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
     </div>
