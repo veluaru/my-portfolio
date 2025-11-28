@@ -1,0 +1,27 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Set this to master if your branch is named master
+
+permissions:
+  contents: write # Important: allows the action to push to your gh-pages branch
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }} # Prevents concurrent deploys
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # The folder the build script generates
