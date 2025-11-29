@@ -2,6 +2,7 @@ import type { Project, TechItem } from '../types';
 import MinimalPreview from '../assets/images/MinimalPreview.jpeg';
 import WhereInTheWorldPreview from '../assets/images/WhereInTheWorldPreview.jpeg';
 import PokedexPreview from '../assets/images/PokedexPreview.jpeg';
+import TuShopPreview from '../assets/images/TuShopPreview.jpeg';;
 
 export const techStackData: TechItem[] = [
   { name: "React", logo: "https://img.icons8.com/plasticine/100/react.png" },
@@ -48,8 +49,8 @@ export const projectsListData: Project[] = [
     title: "TuShop",
     description: "Your personal online marketplace. 'TuShop' is a feature-rich e-commerce site with product browsing, a functional shopping cart, and detailed product views.",
     tags: ["Vue.js", "Nuxt.js", "Javascriot", "SASS"],
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBrirbdmYkz0tNgkEu7o6-IQTPyWsqYfhdyFBeWiOTEYwBvKAaC0RKyU0dJm0UhGsFvCK9C0VhfxUyxQMRTr8Zi8_MHxMqX-JXBNWt-VOKSVEJFeThLmmgf1-7KOB8R5InRuMJudcn4Frfa1NX8FN99uGrqNaeyH4B5upr-VuPLSfddgLR5X8dcTUa8oG2uh4t65KWUa-woba4IELrzqjetdNzop4pu-0pbRNoeHNmm8y-MZ-FA0Ww2T4H5LjtjVpv1iJ529lKnFHk",
-    liveLink: "",
+    image: TuShopPreview,
+    liveLink: "https://veluaru.github.io/store-nuxt/",
     sourceLink: "https://github.com/veluaru/store-nuxt"
   }
 ];
