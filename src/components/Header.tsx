@@ -1,8 +1,8 @@
 import { Sun, Moon, Code2 } from 'lucide-react';
-import { usePortfolioStore } from '../store/usePortfolioStore';
+// import { usePortfolioStore } from '../store/usePortfolioStore';
 
 const Header = () => {
-  const { isDarkMode, toggleTheme } = usePortfolioStore();
+  // const { isDarkMode, toggleTheme } = usePortfolioStore();
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -19,14 +19,14 @@ const Header = () => {
 
       <div className="flex flex-1 justify-end items-center gap-4 sm:gap-8">
         <nav className="hidden sm:flex items-center gap-9">
-          <button onClick={() => scrollToSection('hero')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</button>
-          <button onClick={() => scrollToSection('about')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About</button>
-          <button onClick={() => scrollToSection('tech-stack')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Tech stack</button>
-          <button onClick={() => scrollToSection('projects')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Projects</button>
-          <button onClick={() => scrollToSection('contact')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</button>
+          <button onClick={() => scrollToSection('hero')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer">Home</button>
+          <button onClick={() => scrollToSection('about')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer">About</button>
+          <button onClick={() => scrollToSection('tech-stack')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer">Tech stack</button>
+          <button onClick={() => scrollToSection('projects')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer">Projects</button>
+          <button onClick={() => scrollToSection('contact')} className="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer">Contact</button>
         </nav>
 
-        <div className="flex gap-2">
+        {/* <div className="flex gap-2">
           <a className="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
             <button
               onClick={toggleTheme}
@@ -36,7 +36,7 @@ const Header = () => {
 
             </button>
           </a>
-        </div>
+        </div> */}
       </div>
     </header>
   );

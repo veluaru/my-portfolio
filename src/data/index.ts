@@ -5,8 +5,9 @@ import PokedexPreview from '../assets/images/PokedexPreview.jpeg';
 import TuShopPreview from '../assets/images/TuShopPreview.jpeg';;
 
 export const techStackData: TechItem[] = [
-  { name: "React", logo: "https://img.icons8.com/plasticine/100/react.png" },
   { name: "Vue", logo: "https://img.icons8.com/color/48/vue-js.png" },
+  { name: "React", logo: "https://img.icons8.com/plasticine/100/react.png" },
+  { name: "React Native", logo: "https://img.icons8.com/plasticine/100/react.png" },
   { name: "JavaScript", logo: "https://img.icons8.com/color/48/javascript--v1.png" },
   { name: "HTML", logo: "https://img.icons8.com/color/48/html-5--v1.png" },
   { name: "CSS", logo: "https://img.icons8.com/color/48/css3.png" },
@@ -19,12 +20,12 @@ export const techStackData: TechItem[] = [
 export const projectsListData: Project[] = [
   {
     id: 1,
-    title: "Minimal Shop",
-    description: "Experience seamless online shopping with this elegant and fully responsive e-commerce storefront. Browse products, view details, and enjoy a minimalist design.",
-    tags: ["Vue.js 3", "Javascript", "SASS"],
-    image: MinimalPreview,
-    liveLink: "https://veluaru.github.io/Shop-vue-3/#/",
-    sourceLink: "https://github.com/veluaru/Shop-vue-3"
+    title: "TuShop",
+    description: "Your personal online marketplace. 'TuShop' is a feature-rich e-commerce site with product browsing, a functional shopping cart, and detailed product views.",
+    tags: ["Vue.js", "Nuxt.js", "Javascript", "SASS"],
+    image: TuShopPreview,
+    liveLink: "https://veluaru.github.io/store-nuxt/",
+    sourceLink: "https://github.com/veluaru/store-nuxt"
   },
   {
     id: 2,
@@ -46,11 +47,11 @@ export const projectsListData: Project[] = [
   },
   {
     id: 4,
-    title: "TuShop",
-    description: "Your personal online marketplace. 'TuShop' is a feature-rich e-commerce site with product browsing, a functional shopping cart, and detailed product views.",
-    tags: ["Vue.js", "Nuxt.js", "Javascriot", "SASS"],
-    image: TuShopPreview,
-    liveLink: "https://veluaru.github.io/store-nuxt/",
-    sourceLink: "https://github.com/veluaru/store-nuxt"
+    title: "Minimal Shop",
+    description: "Experience seamless online shopping with this elegant and fully responsive e-commerce storefront. Browse products, view details, and enjoy a minimalist design.",
+    tags: ["Vue.js 3", "Javascript", "SASS"],
+    image: MinimalPreview,
+    liveLink: "https://veluaru.github.io/Shop-vue-3/#/",
+    sourceLink: "https://github.com/veluaru/Shop-vue-3"
   }
 ];
