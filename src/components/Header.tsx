@@ -1,4 +1,4 @@
-import { Sun, Moon, Code2 } from 'lucide-react';
+import { Code2 } from 'lucide-react';
 // import { usePortfolioStore } from '../store/usePortfolioStore';
 
 const Header = () => {
